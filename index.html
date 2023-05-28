@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1).
+    <script>
+function findMultiplesOfThree() {
+  const multiples = [];
+
+  for (let i = 0; i <= 100; i++) {
+    if (i % 3 === 0) {
+      multiples.push(i);
+    }
+  }
+
+  return multiples;
+}
+
+const multiplesOfThree = findMultiplesOfThree();
+console.log("Multiples of 3:", multiplesOfThree);
+
+    </script> -->
+
+    <!-- 2).
+    <script>
+        function printNamesStartingWithA(names) {
+  const namesStartingWithA = names.filter(name => name.toLowerCase().startsWith('a'));
+
+  console.log("Names starting with 'a':");
+  namesStartingWithA.forEach(name => console.log(name));
+}
+
+const friendNames = ["Alice", "Bob", "Anna", "Alex", "Amy", "Adam"];
+printNamesStartingWithA(friendNames);
+
+    </script> -->
+
+    <!-- 3).
+    <script>
+        function createNumberArray() {
+  const numbers = [];
+
+  for (let i = 0; i <= 50; i++) {
+    if ((i % 2 === 0 || i % 5 === 0) && !(i % 2 === 0 && i % 5 === 0)) {
+      numbers.push(i);
+    }
+  }
+
+  return numbers;
+}
+
+const numberArray = createNumberArray();
+console.log("Number array:", numberArray);
+
+    </script> -->
+
+    <script>
+       function countOccurrences(numbers) {
+  const occurrences = {};
+
+  numbers.forEach(number => {
+    if (occurrences[number]) {
+      occurrences[number]++;
+    } else {
+      occurrences[number] = 1;
+    }
+  });
+
+  return occurrences;
+}
+
+const numberArray = [2, 121, 4341, 242, 562, 43, 182, 55, 32, 98, 326];
+const occurrences = countOccurrences(numberArray);
+
+console.log("Number occurrences:");
+for (const number in occurrences) {
+  console.log(`${number}: ${occurrences[number]} occurrences`);
+}
+
+    </script>
+
+</body>
+</html>
